@@ -146,27 +146,29 @@
 
     <!-- counter section -->
     <section class="">
-        <div class="w-11/12 mx-auto py-20 px-16 bg-[#F7F8F8]">
+        <div class="w-11/12 mx-auto py-20 px-4 md:px-16 bg-[#F7F8F8]">
             <!-- counter heading -->
-            <div class="w-2/5 mx-auto text-center space-y-6 pb-4">
+            <div class="w-11/12 lg:w-2/5 mx-auto text-center space-y-6 pb-4">
                 <h2 class="text-4 text-4xl font-bold">Hanif Paribahan</h2>
-                <p class="text font-medium">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                <p class="text font-medium">Yes, you can run unit tests and view the results directly within the app.
+                    The integrated testing features allow for a streamlined .</p>
             </div>
 
             <!-- counter departure -->
-            <div class="p-8 bg-white flex justify-between">
-
+            <div class="p-8 bg-white flex flex-col lg:flex-row justify-between rounded-2xl mb-6">
                 <!-- left-side contents -->
-                <div class="w-4/5">
-                    <div class="flex justify-between">
-                        <div class="flex gap-4">
+                <div class="w-full lg:w-4/5">
+                    <div class="flex flex-col  md:flex-row md:justify-between">
+                        <div class="flex gap-4 mb-4">
                             <img src="resources/images/bus-logo.png" alt="">
                             <div>
-                                <h2 class="text-4xl text-black font-semibold">Hanif Paribahan</h2>
+                                <h2 class="text-xl md:text-2xl lg:text-4xl text-black font-bold md:font-semibold">Hanif
+                                    Paribahan</h2>
                                 <p class="text font-medium">Coach-009-WEB ! AC_Business</p>
                             </div>
                         </div>
-                        <div class="flex justify-between w-40 p-4 bg-[#1DD10026] rounded-md">
+                        <div
+                            class="flex justify-center gap-5 items-center md:gap-0 md:justify-between w-full md:w-40 mx-auto md:mx-0 p-4 bg-[#1DD10026] rounded-md">
                             <img src="resources/images/seat-green.png" alt="">
                             <p class="font-medium text-[#1DD100]">40 Seats left</p>
                         </div>
@@ -180,7 +182,7 @@
                             <div class="text">Departure Time</div>
                             <div class="text-black">9:00 PM</div>
                         </div>
-                        <div class="flex justify-between gap-16 py-4">
+                        <div class="flex flex-col md:flex-row justify-between gap-4 md:gap-16 py-4">
                             <div class="p-4 bg-[#0307120D] rounded-md text-center font-semibold">
                                 <p>Boarding Point - Laxmipur</p>
                             </div>
@@ -195,7 +197,8 @@
                 </div>
 
                 <!-- right-side contents -->
-                <div class="text-center flex items-center pl-11 border-l-2 border-l-[#1DD100] border-dotted">
+                <div
+                    class="text-center flex justify-center lg:items-center lg:pl-11 lg:border-l-2 lg:border-l-[#1DD100] lg:border-dotted">
                     <div class="space-y-3 h-1/2">
                         <img class="mx-auto" src="resources/images/fare.png" alt="">
                         <h3 class="text-4xl text-black font-bold">550 TK</h3>
@@ -203,10 +206,172 @@
                     </div>
                 </div>
             </div>
-            <div></div>
 
+            <!-- ticket selection -->
+            <div class="bg-white p-8 rounded-2xl">
+                <!-- left-side contents -->
+                <div class="w-[55%] ">
+                    <div class="py-4 border-b-2 border-b-[#0307121A] border-dotted">
+                        <h3 class="text-3xl font-bold">Select Your Seat</h3>
+                    </div>
+                    <div class="flex justify-between py-4 border-b-2 border-b-[#0307121A] border-dotted">
+                        <div class="flex gap-2">
+                            <img src="resources/images/seat-gray.png" alt="">
+                            <p>Available</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <img src="resources/images/seat-green-filled.png" alt="">
+                            <p>Selected</p>
+                        </div>
+                    </div>
+                    <div class="py-4 flex justify-end">
+                        <div class="w-20 flex justify-center rounded-2xl bg-[#0307121A] py-2 px-4">
+                            <img src="resources/images/wheel.svg" alt="">
+                        </div>
+                    </div>
 
-            <!-- ticket selection  -->
+                    <div class="py-4">
+                        <div class="space-y-4">
+                            <div class="flex justify-between">
+                                <div class="flex items-center">A</div>
+                                <div class="w-11/12 flex">
+                                    <div class="w-11/12 flex justify-start gap-14">
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A1</div>
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A2</div>
+                                    </div>
+                                    <div class="w-11/12 flex justify-end gap-14">
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A3</div>
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A4</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex items-center">A</div>
+                                <div class="w-11/12 flex">
+                                    <div class="w-11/12 flex justify-start gap-14">
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A1</div>
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A2</div>
+                                    </div>
+                                    <div class="w-11/12 flex justify-end gap-14">
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A3</div>
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A4</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex items-center">A</div>
+                                <div class="w-11/12 flex">
+                                    <div class="w-11/12 flex justify-start gap-14">
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A1</div>
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A2</div>
+                                    </div>
+                                    <div class="w-11/12 flex justify-end gap-14">
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A3</div>
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A4</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex items-center">A</div>
+                                <div class="w-11/12 flex">
+                                    <div class="w-11/12 flex justify-start gap-14">
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A1</div>
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A2</div>
+                                    </div>
+                                    <div class="w-11/12 flex justify-end gap-14">
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A3</div>
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A4</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex items-center">A</div>
+                                <div class="w-11/12 flex">
+                                    <div class="w-11/12 flex justify-start gap-14">
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A1</div>
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A2</div>
+                                    </div>
+                                    <div class="w-11/12 flex justify-end gap-14">
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A3</div>
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A4</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex items-center">A</div>
+                                <div class="w-11/12 flex">
+                                    <div class="w-11/12 flex justify-start gap-14">
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A1</div>
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A2</div>
+                                    </div>
+                                    <div class="w-11/12 flex justify-end gap-14">
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A3</div>
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A4</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex items-center">A</div>
+                                <div class="w-11/12 flex">
+                                    <div class="w-11/12 flex justify-start gap-14">
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A1</div>
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A2</div>
+                                    </div>
+                                    <div class="w-11/12 flex justify-end gap-14">
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A3</div>
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A4</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex items-center">A</div>
+                                <div class="w-11/12 flex">
+                                    <div class="w-11/12 flex justify-start gap-14">
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A1</div>
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A2</div>
+                                    </div>
+                                    <div class="w-11/12 flex justify-end gap-14">
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A3</div>
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A4</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex items-center">A</div>
+                                <div class="w-11/12 flex">
+                                    <div class="w-11/12 flex justify-start gap-14">
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A1</div>
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A2</div>
+                                    </div>
+                                    <div class="w-11/12 flex justify-end gap-14">
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A3</div>
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A4</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex items-center">A</div>
+                                <div class="w-11/12 flex">
+                                    <div class="w-11/12 flex justify-start gap-14">
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A1</div>
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A2</div>
+                                    </div>
+                                    <div class="w-11/12 flex justify-end gap-14">
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A3</div>
+                                        <div class="bg-[#F7F8F8] px-8 py-2 rounded-lg">A4</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- right-side contents -->
+                <div class="w-[45%]">
+
+                </div>
+
+            </div>
 
         </div>
 
