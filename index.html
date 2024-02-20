@@ -123,7 +123,7 @@
                         <p class="font-semibold text">use by January 2024</p>
                     </div>
                     <div class="flex flex-col justify-center items-center p-8 space-y-2 md:border-l-4 border-dotted">
-                        <h3 class="text-3xl font-semibold">NEW15</h3>
+                        <h3 id="off15" class="text-3xl font-semibold">NEW15</h3>
                         <p class="font-semibold text">Cupon Code</p>
                     </div>
                 </div>
@@ -135,7 +135,7 @@
                         <p class="font-semibold text">use by January 2024</p>
                     </div>
                     <div class="flex flex-col justify-center items-center p-8 space-y-2 md:border-l-4 border-dotted">
-                        <h3 class="text-3xl font-semibold">Couple 20</h3>
+                        <h3 id="off20" class="text-3xl font-semibold">Couple 20</h3>
                         <p class="font-semibold text">Cupon Code</p>
                     </div>
                 </div>
@@ -170,7 +170,7 @@
                         <div
                             class="flex justify-center gap-5 items-center md:gap-0 md:justify-between w-full md:w-40 mx-auto md:mx-0 p-4 bg-[#1DD10026] rounded-md">
                             <img src="resources/images/seat-green.png" alt="">
-                            <p class="font-medium text-[#1DD100]">40 Seats left</p>
+                            <p class="font-medium text-[#1DD100]"><span id="seat-left">40</span> Seats left</p>
                         </div>
                     </div>
                     <div class="bg-[#F7F8F8] p-5 mt-4 rounded-xl">
@@ -240,8 +240,8 @@
                                         <div id="A2" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">A2</div>
                                     </div>
                                     <div class="w-11/12 flex justify-end gap-2 md:gap-14">
-                                        <div id="A3" onclick="seatBooking(this.id)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">A3</div>
-                                        <div id="A4" onclick="seatBooking(this.id)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">A4</div>
+                                        <div id="A3" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">A3</div>
+                                        <div id="A4" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">A4</div>
                                     </div>
                                 </div>
                             </div>
@@ -249,12 +249,12 @@
                                 <div class="flex items-center">B</div>
                                 <div class="w-11/12 flex">
                                     <div class="w-11/12 flex justify-start gap-2 md:gap-14">
-                                        <div id="B1" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">B1</div>
-                                        <div id="B2" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">B2</div>
+                                        <div id="B1" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">B1</div>
+                                        <div id="B2" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">B2</div>
                                     </div>
                                     <div class="w-11/12 flex justify-end gap-2 md:gap-14">
-                                        <div id="B3" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">B3</div>
-                                        <div id="B4" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">B4</div>
+                                        <div id="B3" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">B3</div>
+                                        <div id="B4" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">B4</div>
                                     </div>
                                 </div>
                             </div>
@@ -262,12 +262,12 @@
                                 <div class="flex items-center">C</div>
                                 <div class="w-11/12 flex">
                                     <div class="w-11/12 flex justify-start gap-2 md:gap-14">
-                                        <div id="C1" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">C1</div>
-                                        <div id="C2" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">C2</div>
+                                        <div id="C1" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">C1</div>
+                                        <div id="C2" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">C2</div>
                                     </div>
                                     <div class="w-11/12 flex justify-end gap-2 md:gap-14">
-                                        <div id="C3" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">C3</div>
-                                        <div id="C4" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">C4</div>
+                                        <div id="C3" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">C3</div>
+                                        <div id="C4" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">C4</div>
                                     </div>
                                 </div>
                             </div>
@@ -275,12 +275,12 @@
                                 <div class="flex items-center">D</div>
                                 <div class="w-11/12 flex">
                                     <div class="w-11/12 flex justify-start gap-2 md:gap-14">
-                                        <div id="D1" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">D1</div>
-                                        <div id="D2" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">D2</div>
+                                        <div id="D1" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">D1</div>
+                                        <div id="D2" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">D2</div>
                                     </div>
                                     <div class="w-11/12 flex justify-end gap-2 md:gap-14">
-                                        <div id="D3" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">D3</div>
-                                        <div id="D4" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">D4</div>
+                                        <div id="D3" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">D3</div>
+                                        <div id="D4" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">D4</div>
                                     </div>
                                 </div>
                             </div>
@@ -288,12 +288,12 @@
                                 <div class="flex items-center">A</div>
                                 <div class="w-11/12 flex">
                                     <div class="w-11/12 flex justify-start gap-2 md:gap-14">
-                                        <div id="A5" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">A5</div>
-                                        <div id="A6" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">A6</div>
+                                        <div id="A5" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">A5</div>
+                                        <div id="A6" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">A6</div>
                                     </div>
                                     <div class="w-11/12 flex justify-end gap-2 md:gap-14">
-                                        <div id="A7" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">A7</div>
-                                        <div id="A8" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">A8</div>
+                                        <div id="A7" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">A7</div>
+                                        <div id="A8" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">A8</div>
                                     </div>
                                 </div>
                             </div>
@@ -301,12 +301,12 @@
                                 <div class="flex items-center">B</div>
                                 <div class="w-11/12 flex">
                                     <div class="w-11/12 flex justify-start gap-2 md:gap-14">
-                                        <div id="B5" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">B5</div>
-                                        <div id="B6" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">B6</div>
+                                        <div id="B5" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">B5</div>
+                                        <div id="B6" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">B6</div>
                                     </div>
                                     <div class="w-11/12 flex justify-end gap-2 md:gap-14">
-                                        <div id="B7" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">B7</div>
-                                        <div id="B8" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">B8</div>
+                                        <div id="B7" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">B7</div>
+                                        <div id="B8" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">B8</div>
                                     </div>
                                 </div>
                             </div>
@@ -314,12 +314,12 @@
                                 <div class="flex items-center">C</div>
                                 <div class="w-11/12 flex">
                                     <div class="w-11/12 flex justify-start gap-2 md:gap-14">
-                                        <div id="C5" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">C5</div>
-                                        <div id="C6" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">C6</div>
+                                        <div id="C5" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">C5</div>
+                                        <div id="C6" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">C6</div>
                                     </div>
                                     <div class="w-11/12 flex justify-end gap-2 md:gap-14">
-                                        <div id="C7" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">C7</div>
-                                        <div id="C8" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">C8</div>
+                                        <div id="C7" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">C7</div>
+                                        <div id="C8" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">C8</div>
                                     </div>
                                 </div>
                             </div>
@@ -327,12 +327,12 @@
                                 <div class="flex items-center">D</div>
                                 <div class="w-11/12 flex">
                                     <div class="w-11/12 flex justify-start gap-2 md:gap-14">
-                                        <div id="D5" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">D5</div>
-                                        <div id="D6" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">D6</div>
+                                        <div id="D5" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">D5</div>
+                                        <div id="D6" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">D6</div>
                                     </div>
                                     <div class="w-11/12 flex justify-end gap-2 md:gap-14">
-                                        <div id="D7" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">D7</div>
-                                        <div id="D8" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">D8</div>
+                                        <div id="D7" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">D7</div>
+                                        <div id="D8" onclick="seatBooking(this)" class="bg-[#F7F8F8] px-4 md:px-8 py-2 rounded-lg">D8</div>
                                     </div>
                                 </div>
                             </div>
@@ -361,39 +361,32 @@
                               <!-- head -->
                               <thead>
                                 <tr>
-                                  <th>Seat <span class="px-2 py-[1px] font-bold rounded-lg bg-[#1DD100]">2</span></th>
+                                  <th>Seat <span id="ticket-count" class="px-2 py-[1px] font-bold rounded-lg bg-[#1DD100] text-white">0</span></th>
                                   <th>Class</th>
                                   <th>Price</th>
                                 </tr>
                               </thead>
                               <tbody id="ticket-list">
                                 <!-- row 1 -->
-                                <tr>
+                                <!-- <tr>
                                   <td>Brice</td>
                                   <td>Tax</td>
                                   <td>Red</td>
-                                </tr>
+                                </tr> -->
                               </tbody>
                             </table>
                           </div>
-
-                        <!-- <div
-                            class="flex justify-between text-[#03071299] font-semibold py-4">
-                            <div>C2</div>
-                            <div>Economy</div>
-                            <div>550</div>
-                        </div> -->
                         <div class="flex justify-between font-bold py-4 border-t-2 border-t-[#0307121A]">
                             <div>Total Price</div>
-                            <div>BDT 1100</div>
+                            <div>BDT <span id="total-price">0</span></div>
                         </div>
                         <label class="input flex flex-col md:flex-row items-center gap-2 py-2">
-                            <input type="text" class="grow" placeholder="Have any cupon ?" />
-                            <button class="btn btn-sm bg-[#1DD100] mt-4 md:mt-0 px-16 md:px-5 text-white">Apply</button>
+                            <input id="input-cupon" type="text" class="grow" placeholder="Have any cupon ?" />
+                            <button id="apply" class="btn btn-sm bg-[#1DD100] mt-4 md:mt-0 px-16 md:px-5 text-white">Apply</button>
                         </label>
                         <div class="flex justify-between font-bold py-4 mt-12 md:mt-0">
                             <div>Grand Total</div>
-                            <div>BDT <span>1100</span></div>
+                            <div>BDT <span id="grand-total">0</span></div>
                         </div>
                     </div>
                     <div class="flex flex-col space-y-4">

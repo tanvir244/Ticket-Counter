@@ -1,10 +1,31 @@
 
 
+
 function seatBooking(elementId){
-    setBackgroundColor(elementId);    
-    seatInfo(elementId.id);
-    console.log(0 + 1);
+    // counting seat number 
+    const currentTicket = ticketCount('ticket-count');
+    const updateTicket = currentTicket + 1;
+    // const setCountingSeat = seatCount.innerText = updateTicket;
+    if(updateTicket <= 4){
+        // counting seat number 
+        const seatCount = document.getElementById('ticket-count');
+        seatCount.innerText = updateTicket;
+
+        // setting background color of selected seat
+        setBackgroundColor(elementId);    
+        // seat info daynamic table
+        seatInfo(elementId.id);
+        // seat left
+        seatLeft();
+        // total price
+        totalPrice(updateTicket);
+    }
 }
+
+// apply cupon 
+const applyCupon = document.getElementById('apply');
+applyCupon.addEventListener('click', grandTotalCalculation);
+
 function seatInfo(seatNumber){
     const newRow = document.createElement('tr');
 
