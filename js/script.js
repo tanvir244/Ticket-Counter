@@ -47,3 +47,15 @@ function seatInfo(seatNumber){
     const ticketList = document.getElementById('ticket-list');
     ticketList.appendChild(newRow);
 }
+
+// click next button
+const nextBtn = document.getElementById('next-btn');
+nextBtn.addEventListener('click', function nextStep(){
+    // add hidden classlist
+    addClassList('header');
+    addClassList('offer-section');
+    addClassList('counter-section');
+    addClassList('footer-section');
+    // remove hidden classlist
+    removeClassList('success-modal');
+}) 

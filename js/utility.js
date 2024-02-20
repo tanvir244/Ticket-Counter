@@ -24,6 +24,19 @@ function grandTotal(discount){
     const innerTotalPrice = elementTotalPrice.innerText;
     const grandTotal = (innerTotalPrice * discount) / 100;
 }
+
+function hideCupon(){
+    const cuponLebel = document.getElementById('cupon-lebel');
+    cuponLebel.classList.add('hidden');
+}
+function addClassList(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.add('hidden');
+}
+function removeClassList(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.remove('hidden');
+}
 function grandTotalCalculation(){
     // ==== get grant total element 
     const elementGrandTotal = document.getElementById('grand-total');
@@ -46,11 +59,15 @@ function grandTotalCalculation(){
         const grandTotalCal = total - ((total * 15) / 100);
         grandTotal = Math.round(grandTotalCal);
         elementGrandTotal.innerText = grandTotal;
+        // hide cupon input
+        hideCupon();
     }
     else if(inputCuopn === new20){
         const grandTotalCal = total - ((total * 20) / 100);
         grandTotal = Math.round(grandTotalCal);
         elementGrandTotal.innerText = grandTotal;
+        // hide cupon input 
+        hideCupon();
     }
     else if(inputCuopn === ''){
         alert('Please give your cupon!');
